@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFBB;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background-color: #FFEE99;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    width: 800px; 
+    height: auto; 
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.home-photo img {
+    width: 100%; /* 讓照片寬度佔滿其容器 */
+    max-width: 300px; /* 調整照片最大寬度 */
+    height: auto; /* 根據寬度自動調整高度 */
+    border-radius: 50%; /* 圓形照片 */
+    margin-right: 20px; /* 照片右邊距 */
+}
+
+.home-text {
+    flex: 2;
+    text-align:center;
+
+}
+
+.home-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.home-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight:bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
